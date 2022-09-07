@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CALCULADORA</h1>
+    </header>
+
+    <div class="calculo">
+        <input type="number" id="n1" placeholder="Digite o número."><br><br>
+        <select id="seletor">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select><br><br>
+        <input type="number" id="n2" placeholder="Digite número."><br><br>
+        <button onclick="calcular()">Calcular</button>
+    </div>
+    <div class="resultado">
+        <h3 id="resultado"></h3>
+    </div>
+
+    <footer>
+        <p>Feito com 💚 por <a href="https://github.com/samanthazenezi" target="_blank">Samantha Zenezi</a></p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

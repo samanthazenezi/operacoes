@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de média</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de média</h1>
+        <p>Inclua as notas para a média ser calculada.</p>
+    </header>
+    <main>
+        <form>
+            <div class="nota">
+                <label for="primeiro">Nota 1° bimestre</label>
+                <input type="number" name="primeiro" id="nota1">
+            </div>
+            <div class="nota">
+                <label for="segundo">Nota 2° bimestre</label>
+                <input type="number" name="segundo" id="nota2">
+            </div>
+            <div class="nota">
+                <label for="terceiro">Nota 3° bimestre</label>
+                <input type="number" name="terceiro" id="nota3">
+            </div>
+            <div class="nota">
+                <label for="quarto">Nota 4° bimestre</label>
+                <input type="number" name="quarto" id="nota4">
+            </div>
+        </form>
+        <button onclick="calcularMedia()">Calcular</button>
+    </main>
+    <div class="media" id="media"></div>
+    <footer>
+        <p>Feito com 💚 por <a href="https://github.com/samanthazenezi" target="_blank">Samantha Zenezi</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
